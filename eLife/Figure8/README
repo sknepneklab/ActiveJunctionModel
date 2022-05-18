@@ -1,0 +1,26 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Silke Henkes
+#  Date: 17-May-2022
+#
+#  Scripts and data files used to produce Figure 8 panels C, D and E
+#
+# ################################################################################################
+
+Python script and MAT files
+
+experiment_granerflow.py -- extracts and computes Graner U and integrated V tensors from experimental datasets.
+
+Plots of time traces of U and V for central sickle (data sets 'Domain5940_832' and 'Domain5940_1177')
+Plots polarisation and flow orientation for sickle series datasets.
+
+Sickle series datasets: Domain5940_142, Domain5940_487, Domain5940_832, Domain5940_1177, Domain5940_1522, Domain5940_1867
+Contain MAT files from the experimental data analysis of tracked cell dynamics.
+
+
+
+
+

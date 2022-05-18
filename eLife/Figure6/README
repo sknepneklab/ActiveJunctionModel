@@ -1,0 +1,19 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Silke Henkes
+#  Date: 17-May-2022
+#
+#  Scripts and data files used to produce Figure 6 and panel A of Figure 7.
+#
+# ################################################################################################
+
+Python and shell scripts 
+
+average_patch_script.sh -- shell script to run and analyse a disordered patch simulation
+make_random_passive.py -- python script to use utility to generate disordered initial packing
+random_40x40_patch.json -- sample disorderd packing json input file 
+random_set_params.py -- python script that runs disordered patch simulation and produces output vtp and json files
+

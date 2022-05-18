@@ -1,0 +1,18 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Silke Henkes
+#  Date: 17-May-2022
+#
+#  Scripts and data files used to produce Figure 2.
+#
+# ################################################################################################
+
+Python script and JSON file
+
+run_14cells_myopool.py -- runs the simulation using the JSON file as input for the precise run 
+                          of Figure 2, outputs VTP files for ParaView plotting
+honeycomb_14LR_centered_noconstraint.json -- JSON input file for the regular lattice with four 
+                                             central active cells and ten buffer half active cells

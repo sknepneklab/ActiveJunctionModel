@@ -1,0 +1,27 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Silke Henkes
+#  Date: 17-May-2022
+#
+#  Scripts and data files used to produce Figure 4, panel D of Figure 3, and 
+#  Figure 3 - figure supplement 1.
+#
+# ################################################################################################
+
+Python scripts and sample pickle files
+
+plot_T1_statistics.py  -- Reads pickle files for Graner statistics and central T1 tracking, plots 
+                          panels A-C of Figure 4, panel D of Figure 3, and Figure 3 - figure supplement 1.
+Graneraverages.py -- Uses AJMAnalysis/Graner functions to collect spatially averaged statistics for 
+                          U, V and P in the active / half active region
+
+Sample pickle files (these ones beta 0.8, force 0.15, seed 1, i.e. runs shown in Fig. 2 and 3)
+
+Note: Full dataset contains ~2500 pickle files, ~3.6GB.
+
+picklefiles/tensor_timeseries_1.p  -- output of the Graner statistics
+picklefiles/junction_dynamics_timeseries_1.p -- tracking of central T1 used to determine 
+

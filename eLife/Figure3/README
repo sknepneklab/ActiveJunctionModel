@@ -1,0 +1,18 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Silke Henkes
+#  Date: 17-May-2022
+#
+#  Scripts and data files used to produce Figure 3 panels B-C
+#
+# ################################################################################################
+
+Python script and pickle file
+
+Plot_AJM_dynamics.py -- plots dynamics of central junctions and shoulder junctions around first T1
+junction_dynamics_timeseries.py -- pickle file with dynamics of tracked central and shoulder junctions, dataset beta=0.8, fpull=0.15, seed 1
+
+

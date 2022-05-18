@@ -1,0 +1,31 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Rastko Sknepnek
+#  Date: 10-May-2022
+#
+#  Scripts and data files used to produce Figure 7D.
+#
+# ################################################################################################
+
+Python files to produce initial configurations and run simulations that produce the data 
+
+cell.py
+CellList2D.py
+make_mesh.py 
+make_random.py
+random_box.py
+run.py            -- scripts that runs the simulation
+vertex.py 
+voro_box.py
+
+Python files for the figure 
+
+fig_7D.npz  -- compressed NumPy arrays with values of the data that go into the figure 
+polarisation.py -- script that produced the plot 
+scientific.mplstyle  -- style file for the figure
+
+Note: The raw data is several GB in size and would take several days to produce on a single CPU core.
+It is the same dataset as in Figure 7C.

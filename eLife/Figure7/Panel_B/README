@@ -1,0 +1,28 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Silke Henkes
+#  Date: 17-May-2022
+#
+#  Scripts and data files used to produce Figure 7B.
+#
+# ################################################################################################
+
+Python script and sample pickle files
+
+plot_patch_statistics.py  -- Reads in pickle files for Graner, T1, and myosin/tension polarisation 
+                             statistics plots panel B of Figure 7
+
+Graneraverages.py -- Uses AJMAnalysis/Graner functions to collect spatially averaged patch statistics 
+                     for U, V and P as well as myosin and tension stress tensors.
+
+Also includes T1 identification function with filtering algorithm.
+
+Sample pickle files (this one beta 0.5, force 0.2, seed 1, i.e. run shown in panel A)
+
+Note: Full dataset contains 315 pickle files, ~ 500 Mb dataset
+
+picklefiles/tensor_timeseries_1.p  -- output of the Graner, T1, and myosin / tension polarisation statistics
+

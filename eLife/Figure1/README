@@ -1,0 +1,18 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Rastko Sknepnek
+#  Date: 11-May-2022
+#
+#  Scripts and data files used to produce Figure 1 -- figure supplement 1.
+#
+# ################################################################################################
+
+MATLAB code
+
+ajm_1d.m  
+fig1b.m  -- produces panel B 
+fig1c_and_fig_supplement_1c.m  -- produces panel C (and the inset) and panel C in the figure supplement 1
+redblue.m 

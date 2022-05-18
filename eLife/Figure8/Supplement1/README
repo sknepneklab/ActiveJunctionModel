@@ -1,0 +1,27 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Rastko Sknepnek
+#  Date: 10-May-2022
+#
+#  Scripts and data files used to produce Figure 8 -- figure supplement 1.
+#
+# ################################################################################################
+
+Data files (MATLAB .mat files)
+
+anterior_domain/tensor_store/tensor_store*.mat -- files with values of the Graner tensors obtained
+from the image analysis. This is a part of the data analysis pipeline in C.J. Weijer's lab that
+contains over 20,000 lines of MATLAB code and operates on datasets that are in excess on 2TB.
+
+Details available upon request.
+
+MATLAB and data files for the figure 
+
+compute_U.m
+compute_Vint.m
+extract_data.m
+panel_A.m
+panel_B.m

@@ -1,0 +1,17 @@
+# ################################################################################################
+#
+#  Generating active T1 transitions through mechanochemical feedback 
+#  Rastko Sknepnek, Ilyas Djafer-Cherif, Manli Chuai, Cornelis J. Weijer, Silke Henkes
+#
+#  Author: Ilyas Djafer-Cherif
+#  Date: 10-May-2022
+#
+#  Scripts and data files used to produce Figure 5
+#
+# ################################################################################################
+
+Data files and Python Scripts
+
+analysis.py 
+data_ft1.p  -- Python pickle file 
+plot.py -- makes the plot 
