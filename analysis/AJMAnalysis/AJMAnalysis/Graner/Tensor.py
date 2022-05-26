@@ -39,6 +39,7 @@ class Tensor:
         self.eigvals = np.zeros((N, 2))
         self.eigvecs = np.zeros((N, 2, 2))
         self.type = np.zeros(N, dtype=np.int)
+        self.has_eigenvals = False
 
     def compute_eigvals(self):
         for i in range(self.T.shape[0]):
@@ -51,21 +52,26 @@ class Tensor:
                 self.type[i] = 3
             else:
                 self.type[i] = 2
+        self.compute_eigvals = True
 
     def mean(self):
         Tavg = np.mean(self.T, axis=0)
         eigval, eigvec = np.linalg.eigh(Tavg)
-        vx, vy = meigvec[:, 1]
+        vx, vy = eigvec[:, 1]
         alpha = np.arctan2(vy, vx)
         return (eigval, alpha)
 
     def histogram(self, nbin=25):
+        if not self.has_eigenvals:
+            self.compute_eigvals()
         anis = self.eigvals[:, 1]/self.eigvals[:, 0]
         disbin = np.linspace(np.min(anis), np.max(anis), nbin + 1)
         anishist, edges = np.histogram(anis, disbin, density=True)
         return anishist, disbin
 
     def rose(self, nbin=90):
+        if not self.has_eigenvals:
+            self.compute_eigvals()
         rosebin = np.linspace(-0.5*np.pi, 0.5*np.pi, nbin + 1)
         vx = self.eigvecs[:, 0, 1]
         vy = self.eigvecs[:, 1, 1]
@@ -78,7 +84,8 @@ class Tensor:
         return alphahist, rosebin
 
     def plot_vtk_tensor(self, filename, mesh, tensorname):
-        self.compute_eigvals()
+        if not self.has_eigenvals:
+            self.compute_eigvals()
         celltypedict = {}
         ct = 1
         for f in mesh.faces:
